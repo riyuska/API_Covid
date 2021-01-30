@@ -35,7 +35,7 @@ public class ProvinsiAdapter extends RecyclerView.Adapter<ProvinsiAdapter.ViewHo
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         ModelAttributes attributes = objects.get(position).getAttributes();
-        holder.t1.setText("Provinsi                  : "+attributes.getProvinsi());
+        holder.t1.setText("Provinsi              : "+attributes.getProvinsi());
         holder.t2.setText("Pasien Sembuh     : "+attributes.getKasus_Semb());
         holder.t3.setText("Pasien Positif        : "+attributes.getKasus_Posi());
         holder.t4.setText("Pasien Meninggal : "+attributes.getKasus_Meni());
